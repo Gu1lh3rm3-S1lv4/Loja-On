@@ -1,0 +1,138 @@
+/* Estilos gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(img/arranjo-de-carrinhos-de-compras-black-friday-com-espaco-de-copia_23-2148667047.avif);
+  color: #333;
+}
+
+header  {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 2.5em;
+  display: flex;
+}
+p{
+  color: #000000;
+  letter-spacing: 5px;
+
+}
+header img{
+  display: flex;
+  width: 10%;
+  height: 10%;
+}
+
+.search-container {
+  margin-top: 10px;
+  margin-left: 70%;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #ff9d00;
+  border-radius: 4px;
+}
+
+.search-container button {
+  padding: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: solid #ff9d00;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #ff9d00;
+}
+
+.filters {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: solid #ff9d00;
+}
+
+.filters select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+button{
+  background-color: #ff9d00;
+  border-radius: 5px;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.product-section {
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #fff;
+  border: 1px solid #ff9d00;
+  border-radius: 8px;
+  padding: 15px;
+  width: calc(25% - 20px);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-item h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.product-item p {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.product-item .price {
+  font-size: 1.5em;
+  color: #E91E63;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

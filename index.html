@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="" alt="LOGO AQUI">
+      <h1>Loja Online</h1>
+      <div class="menu"><button><P>Criar Conta</P></button><button><p>Cupons</p></button><button><P>Formas De Pagamentos</P></button></div>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
+      <button onclick="searchProducts()">Buscar</button>
+    </div>
+  </header>
+
+  <div class="filters">
+    <h3>Filtros de Pesquisa</h3>
+    <label for="category">Categoria:</label>
+    <select id="category" onchange="applyFilters()">
+      <option value="all">Todos</option>
+      <option value="eletronicos">Eletrônicos</option>
+      <option value="moda">Moda</option>
+      <option value="esportes">Esportes</option>
+      <option value="movel">Móveis</option>
+    </select>
+  </div>
+  <div id="product-list">
+  </div>
+
+  <section class="product-section">
+    <h2>Produtos Disponíveis</h2>
+    <div id="productResults" class="product-list">
+      <!-- Resultados dos produtos vão aparecer aqui -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Loja Online. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
